@@ -25,5 +25,21 @@ fn main() {
     mut_args = "it mut";
     println!("常量 mut 后：CONST_STR: {} ", mut_args);
 
+    // 函数返回值
+    fn test() -> i32{
+        let (a, b) = (3, 4);
+        let d = 0;
+        let c = 4;
+
+        return d + c;
+    }
+
+    let t: i32= test();
+
+    println!("{}", t)
+
+    // 所有权
+
+
 
 }
