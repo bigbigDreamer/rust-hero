@@ -36,9 +36,24 @@ fn main() {
 
     let t: i32= test();
 
-    println!("{}", t)
+    println!("{}", t);
 
     // 所有权
+    let obj = String::from("张三");
+
+    obj.clone();
+
+    // 这里大致懂所有权是啥意思了，所有权意味着转移，而不是引用
+
+    // rust 是不用关心 GC 的，保持变量的所有权，在编译阶段就回收掉
+
+    // 引用
+
+    let x2 = 45;
+
+    let y2 = &x2;
+
+    println!("x2: {{{}}}, y2: {}", x2, *y2);
 
 
 
