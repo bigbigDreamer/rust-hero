@@ -55,6 +55,43 @@ fn main() {
 
     println!("x2: {{{}}}, y2: {}", x2, *y2);
 
+    // 字符串
+
+    // 创建一个全新的字符串
+    let str = String::from("Hello World");
+
+    for s in str.chars() {
+        println!("单个字符s: {}", s)
+    }
+
+    // 原组
+    let (a,b): (bool, i32) = (true, 12);
+
+    println!("a: {}, b: {}", a, b);
+
+    // 结构体
+    struct Animal {
+        name: String,
+        animal_type: String,
+    }
+
+    let dog = Animal {
+        name: String::from("Lily"),
+        animal_type: String::from("Dog"),
+    };
+
+    println!("Animal.name==> {:?}", dog.name);
+    println!("Animal.type==> {:?}", dog.animal_type);
+
+    // 结构体原组
+    struct Color ();
+
+    let i: u32 = -12;
+
+    println!("{}", i);
+
+
+
 
 
 }
