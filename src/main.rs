@@ -86,9 +86,33 @@ fn main() {
     // 结构体原组
     struct Color ();
 
-    let i: u32 = -12;
+    let i: u32 = 12;
 
     println!("{}", i);
+
+    // 复习
+    // 所有权
+    let x1 = String::from("所有权");
+
+    // 至此，x1 的内存在下面这段代码执行完已经释放
+    let x2 = x1;
+
+    // 此段代码会报错
+    // println!("x1: {}, x2: {}", x1, x2)
+
+    // 同一时刻只能拥有一个变量的可变引用，或者多个不可变引用
+
+    // 枚举
+    enum PokerSuit {
+        Clubs(String::from),
+        Spades,
+        Diamonds,
+        Hearts,
+    }
+
+    let test_m1 = PokerSuit::Clubs("sdd");
+
+    println!("枚举类型：{}", test_m1)
 
 
 
