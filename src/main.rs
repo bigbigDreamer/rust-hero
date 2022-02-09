@@ -104,16 +104,22 @@ fn main() {
 
     // 枚举
     enum PokerSuit {
-        Clubs(String::from),
+        Clubs,
         Spades,
         Diamonds,
         Hearts,
     }
 
-    let test_m1 = PokerSuit::Clubs("sdd");
+    // let test_m1 = PokerSuit::Clubs("sdd");
 
-    println!("枚举类型：{}", test_m1)
+    // println!("枚举类型：{}", test_m1)
 
+    // 数组
+    const ARR: [i32; 4] = [1, 2, 3, 3];
+
+    for a in 0..ARR.len()  {
+        println!("ARR 的遍历结果：{}", ARR[a]);
+    }
 
 
 
