@@ -122,6 +122,31 @@ fn main() {
     }
 
 
+    let test_a = 13;
+    let test_b = 25;
+
+    if test_a < test_b {
+        println!("他比我大")
+    }
+
+    fn test_loop() {
+        let mut a = 1;
+
+        loop {
+            a+=1;
+
+            println!("{}", a);
+
+            if a==5 {
+                println!("我要跳出循环");
+                break;
+            }
+        }
+    }
+
+    test_loop();
+
+
 
 
 }
